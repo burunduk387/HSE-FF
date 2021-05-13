@@ -1,0 +1,58 @@
+name: Speckle
+
+on: push
+
+jobs:
+  wifi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    name: Check wifi.py
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install requirements
+      run: pip install -r requirements.txt
+    - name: Try wifi.py data_0.dat
+      run: |
+        python wifi.py .github/workflows/data_0.dat
+        cp wifi.json wifi_0.json
+    - name: Try wifi.py data_1.dat
+      run: |
+        python wifi.py .github/workflows/data_1.dat
+        cp wifi.json wifi_1.json
+    - name: Try wifi.py data_2.dat
+      run: |
+        python wifi.py .github/workflows/data_2.dat
+        cp wifi.json wifi_2.json
+    - name: Try wifi.py data_3.dat
+      run: |
+        python wifi.py .github/workflows/data_3.dat
+        cp wifi.json wifi_3.json
+    - name: Run check_wifi.py
+      run: python .github/workflows/check_wifi.py
+  speckle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    name: Check speckle.py
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install requirements
+      run: pip install -r requirements.txt
+    - name: Try speckle.py
+      run: python speckle.py
+    - name: Check mean.png
+      run: test -e ./mean.png
+    - name: Check fourier.png
+      run: test -e ./fourier.png
+    - name: Check rotaver.png
+      run: test -e ./rotaver.png
+    - name: Check binary.png
+      run: test -e ./binary.png
+
