@@ -1,0 +1,4 @@
+\babel@toc {russian}{}
+\contentsline {section}{Введение}{2}{section*.1}%
+\contentsline {section}{Теоретическая справка}{2}{figure.1}%
+\contentsline {section}{Оборудование и методы}{3}{equation.0.3}%
