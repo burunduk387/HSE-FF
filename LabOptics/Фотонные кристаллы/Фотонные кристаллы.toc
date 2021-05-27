@@ -2,3 +2,7 @@
 \contentsline {section}{Введение}{2}{section*.1}%
 \contentsline {section}{Теоретическая справка}{2}{figure.1}%
 \contentsline {section}{Оборудование и методы}{3}{equation.0.3}%
+\contentsline {section}{Первый эксперимент}{3}{figure.2}%
+\contentsline {section}{Второй эксперимент}{5}{figure.5}%
+\contentsline {section}{Вывод и дополнение}{6}{figure.7}%
+\contentsline {section}{Список литературы}{7}{figure.8}%
