@@ -1,0 +1,19 @@
+\babel@toc {russian}{}
+\contentsline {section}{Введение}{2}{section*.1}%
+\contentsline {section}{Теоретическая справка}{2}{section*.2}%
+\contentsline {subsection}{Минимумы и максимумы интерференции}{2}{section*.3}%
+\contentsline {subsection}{Интерферометр Майкельсона как спектральный прибор}{2}{equation.0.5}%
+\contentsline {subsection}{Определение коэффициента преломления оргстекла}{2}{equation.0.9}%
+\contentsline {subsection}{Определение коэффициента теплового расширения}{3}{equation.0.15}%
+\contentsline {section}{Оборудование и методы}{4}{equation.0.19}%
+\contentsline {section}{Эксперименты}{4}{figure.2}%
+\contentsline {subsection}{Влияние длины плеча на интерференционную картину}{5}{section*.9}%
+\contentsline {subsection}{Опыт с зажигалкой}{5}{section*.10}%
+\contentsline {subsection}{Наблюдение второго выхода интерферометра}{5}{section*.11}%
+\contentsline {subsection}{Определение длины волны лазера}{5}{figure.3}%
+\contentsline {subsection}{Использование интерферометра как спектрометра}{6}{figure.4}%
+\contentsline {subsection}{Наблюдение интерференционной картины от светодидодов, когерентность}{7}{section*.14}%
+\contentsline {subsection}{Определение показателя преломления с помощью интерферометра}{7}{section*.15}%
+\contentsline {subsection}{Измерение коэффициента теплового расширения}{8}{table.3}%
+\contentsline {section}{Вывод}{9}{table.4}%
+\contentsline {section}{Список литературы}{9}{section*.18}%
