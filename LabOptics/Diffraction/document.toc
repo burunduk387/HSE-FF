@@ -4,10 +4,11 @@
 \contentsline {subsection}{Single-slit diffraction}{2}{section*.3}%
 \contentsline {subsection}{Diffraction on a lattice with $N$ slits}{3}{equation.0.2}%
 \contentsline {subsection}{Diffraction on a concentrating reflecting array}{3}{equation.0.5}%
-\contentsline {section}{Equipment and methods}{4}{equation.0.7}%
+\contentsline {section}{Equipment and methods}{4}{equation.0.8}%
 \contentsline {section}{Experimental results}{4}{figure.3}%
-\contentsline {subsection}{The first diffraction grating}{4}{section*.8}%
-\contentsline {subsection}{The second diffraction grating}{5}{table.1}%
-\contentsline {subsection}{The third diffraction grating}{5}{table.2}%
-\contentsline {subsection}{The second experiment}{5}{table.3}%
-\contentsline {section}{References}{6}{figure.4}%
+\contentsline {subsection}{The first diffraction grating}{5}{section*.8}%
+\contentsline {subsection}{The second diffraction grating}{5}{figure.4}%
+\contentsline {subsection}{The third diffraction grating}{6}{figure.5}%
+\contentsline {subsection}{The second experiment}{7}{figure.6}%
+\contentsline {section}{Conclusion}{8}{figure.7}%
+\contentsline {section}{References}{8}{section*.13}%

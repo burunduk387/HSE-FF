@@ -194,19 +194,19 @@
 	\newpage
 	\addcontentsline{toc}{section}{Introduction}
 	\section*{Introduction}
-	This report represents an assembly of an installation for observing diffraction on a reflecting diffraction grating. We studied the diffraction pattern for different gratings at different angles of incidence of light on the grating $\theta_{i}$, determine the positions of the maxima. For each grid, we determined the number of strokes per unit length. Using a photodiode power meter, we measured the light intensity in maxima for the grating with which the greatest number of maxima is observed. After processing the obtained dependence, we determined the angle of the lattice bevel $ \gamma$
+	This report represents an assembly of an installation for observing diffraction on a reflecting diffraction grating. We studied the diffraction pattern for different gratings at different angles of incidence of light, determined the positions of the maxima. For each grid, we determined the number of strokes per unit length. Using a photodiode power meter, we measured the light intensity in maxima for the grating with which the greatest number of maxima was observed. After processing the obtained dependence, we determined the angle of the lattice bevel $\gamma$.
 	\addcontentsline{toc}{section}{Theoretical information}
 	\section*{Theoretical information}
 	\addcontentsline{toc}{subsection}{Single-slit diffraction}
 	\subsection*{Single-slit diffraction}
-	Let the edges of the gap be located at $x = \ pm b / 2$, where $b$ is the width of the gap. A plane monochromatic wave with a wave vector $k$ at an angle $\theta_i$ to the normal vector to the lattice falls on the slit.
+	Let the edges of the gap be located at $x = \pm b / 2$, where $b$ is the width of the gap. A plane monochromatic wave with a wave vector $k$ at an angle $\theta_i$ to the normal vector to the lattice falls on the slit.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.85\linewidth]{diff1.png}
 		\caption{Fraunhofer diffraction on the slit.}
 		\label{fig:1}
 	\end{figure}
-	The phase difference between the waves emitted from the coordinate $x = 0$ and $x$ is equal to $ \delta_1 = - k x (\sin {\theta} + sin {\theta_i})$. We get:
+	The phase difference between the waves emitted from the coordinate $x = 0$ and $x$ is equal to $ \delta_1 = - k x (\sin {\theta} + sin {\theta_i})$. We obtain:
 	\begin{equation}
 		E(\theta) \propto \int_{b/2}^{b/2}{\exp(-i \delta_1(x))dx} \propto \int_{b/2}^{b/2}{\exp(-i k x (\sin{\theta} + \sin{\theta_i})) dx}
 	\end{equation}
@@ -219,7 +219,7 @@
 	\begin{equation}
 		E = E_1 * \sum_{0}^{N-1} \exp(-i \delta n) = E_1 \exp(i\delta(N/2 - 1)) \frac{\sin(N \delta /2)}{\sin(\delta /2)}
 	\end{equation}
-	From here we can get the intensity:
+	From here we can obtain the intensity:
 	\begin{equation}
 		I \propto E^2 \propto (\frac{\sin(k b / 2 (\sin{\theta} + \sin{\theta_i}))}{k b / 2 (\sin{\theta} + \sin{\theta_i})})^2 \cdot (\frac{\sin(N k d / 2 (\sin{\theta} + sin{\theta_i}))}{\sin(k d / 2 (\sin{\theta} + sin{\theta_i}))})^2
 	\end{equation}
@@ -230,9 +230,9 @@
 	where $m$ is an integer called the order of the maximum.
 	\addcontentsline{toc}{subsection}{Diffraction on a concentrating reflecting array}
 	\subsection*{Diffraction on a concentrating reflecting array}
-	Because of the geometry of the concentrating reflecting grid, the multiplier $E_1(\theta)$ will change, and the second multiplier will remain the same.
+	Because of the geometry of the concentrating reflecting grid, the multiplier $E_1(\theta)$ will change, while the second multiplier will remain the same.
 	\begin{equation}
-		I \propto E^2 \propto [\frac{\sin(k b / 2 (\sin(\theta - \gamma) + \sin(\theta_i - \gamma)))}{k b / 2 (\sin(\theta - \gamma) + \sin(\theta_i - \gamma))}]^2 [\frac{\sin(N k d / 2 (\sin{\theta} + sin{\theta_i}))}{\sin(k d / 2 (\sin{\theta} + sin{\theta_i}))}]^2
+		I \propto E^2 \propto (\frac{\sin(k b / 2 (\sin(\theta - \gamma) + \sin(\theta_i - \gamma)))}{k b / 2 (\sin(\theta - \gamma) + \sin(\theta_i - \gamma))})^2 \cdot  (\frac{\sin(N k d / 2 (\sin{\theta} + sin{\theta_i}))}{\sin(k d / 2 (\sin{\theta} + sin{\theta_i}))})^2
 	\end{equation}
 	
 	\begin{figure}[H]
@@ -248,8 +248,10 @@
 	\begin{equation}
 		\phi_B = 2\gamma - \theta_i
 	\end{equation}
-	
-	
+	We can also calculate the amount of slits per unit length using
+	\begin{equation}
+		N_{slit} = \alpha / (\lambda \cdot 10^{-6})
+	\end{equation}
 	\addcontentsline{toc}{section}{Equipment and methods}
 	\section*{Equipment and methods}
 	We used a laser with a wavelength of 520 nm, reflecting diffraction gratings with different lattice constants, a tape measure fixed on the wall, a ruler, and a light intensity analyzer.
@@ -258,22 +260,25 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.85\linewidth]{sch1.jpg}
-		\caption{}
+		\caption{Installation diagram.}
 		\label{fig:3}
 	\end{figure}
-	Source code link: \href{https://github.com/burunduk387/HSE-FF/tree/main/LabOptics/CLC}{https://github.com/burunduk387/HSE-FF/tree/main/LabOptics/CLC}
+	
+	Source code link:
+	\newline
+	\href{https://github.com/burunduk387/HSE-FF/tree/main/LabOptics/Diffraction}{https://github.com/burunduk387/HSE-FF/tree/main/LabOptics/Diffraction}
 	\addcontentsline{toc}{section}{Experimental results}
 	\section*{Experimental results}
-	We fixed the diffraction gratings in front of the screen, which is a wall with a fixed tape measure for measuring the coordinates of the beams on the screen. We moved the laser by changing the angles of incidence of the beam on the grid and recored the results. We repeated this experiment for all three lattices.
+	We fixed each diffraction grating in front of the screen, which was a wall with a fixed tape measure for measuring the coordinates of the beams on the screen. We moved the laser to change the angles of incidence of the beam on the grid and recorded the results. We repeated this experiment for all three gratings. Distance between the wall and the diffraction gratings remained the same throughout all experiments and was $L = 130$ cm. Y-coordinate distance between the diffraction grating and the laser also remained the same and was $a = 51.5$ cm. Different angles were achived by moving the laser X-wise. Raw data for angles different from $\theta_{i} = 0$ are available in the GitHub repository in order not to overload this report with information.
 	\addcontentsline{toc}{subsection}{The first diffraction grating}
 	\subsection*{The first diffraction grating}
 	The results are represented in a table below.
 	\begin{table}[H]
 		\centering
-		\caption{Table with raw data.}
+		\caption{Table with raw data for $\theta_{i} = 0$.}
 		\begin{tabular}[t]{lcc}
 			\hline
-			Order of the maximum&Coordinate of the maxima, cm\\
+			Order of the maximum&Coordinate of the maximum, cm\\
 			\hline
 			-1&77\\
 			0&173.5\\
@@ -281,16 +286,22 @@
 			\hline
 		\end{tabular}
 	\end{table}
-	After fitting a curve, we get its coeffitiets. Using $N_{slit} = \alpha / (\lambda \cdot 10^{-6})$, we obtain $N_{slit} = 1190 mm^{-1}$
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\linewidth]{1200.png}
+		\caption{}
+		\label{fig:1200}
+	\end{figure}
+	Unfortunately, our measuring tape was not long enough, so we were able to make only one measurement. After fitting a line, we get its coeffitiets. We obtain $N_{slit} = 1190 \pm 7  mm^{-1}$.
 	\addcontentsline{toc}{subsection}{The second diffraction grating}
 	\subsection*{The second diffraction grating}
 	The results are represented in a table below.
 	\begin{table}[H]
 		\centering
-		\caption{Table with raw data.}
+		\caption{Table with raw data for $\theta_{i} = 0$.}
 		\begin{tabular}[t]{lcc}
 			\hline
-			Order of the maximum&Coordinate of the maxima, cm\\
+			Order of the maximum&Coordinate of the maximum, cm\\
 			\hline
 			-2&55\\
 			-1&124\\
@@ -300,16 +311,22 @@
 			\hline
 		\end{tabular}
 	\end{table}
-	After fitting a curve, we get its coeffitiets. Using $N_{slit} = \alpha / (\lambda \cdot 10^{-6})$, we obtain $N_{slit} = 601 mm^{-1}$
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\linewidth]{600.png}
+		\caption{}
+		\label{fig:600}
+	\end{figure}
+	After fitting lines, we get their coeffitiets. We obtain $N_{slit} = 597 \pm 8 mm^{-1}$.
 	\addcontentsline{toc}{subsection}{The third diffraction grating}
 	\subsection*{The third diffraction grating}
-	The results are represented in a table below.
+	The results are represented in a table below. 
 	\begin{table}[H]
 		\centering
-		\caption{Table with raw data.}
+		\caption{Table with raw data for $\theta_{i} = 0$.}
 		\begin{tabular}[t]{lcc}
 			\hline
-			Order of the maximum&Coordinate of the maxima, cm\\
+			Order of the maximum&Coordinate of the maximum, cm\\
 			\hline
 			-2&118\\
 			-1&141\\
@@ -319,7 +336,13 @@
 			\hline
 		\end{tabular}
 	\end{table}
-	After fitting a curve, we get its coeffitiets. Using $N_{slit} = \alpha / (\lambda \cdot 10^{-6})$, we obtain $N_{slit} = 294 mm^{-1}$
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.75\linewidth]{300.png}
+		\caption{}
+		\label{fig:300}
+	\end{figure}
+	After fitting lines, we get their coeffitiets. We obtain $N_{slit} = 316 \pm 3 mm^{-1}$.
 	\addcontentsline{toc}{subsection}{The second experiment}
 	\subsection*{The second experiment}
 	For the third grating, we attempted to find $\gamma$ using a light intensity analyzer. The results we got and the theoretical curve that was fitted are shown below.
@@ -329,9 +352,16 @@
 		\caption{}
 		\label{fig:10}
 	\end{figure}
-	We got $\gamma = 0.01$ rad.
-	
-	
+	We got $\gamma = 0.012 \pm 0.005$ rad.
+	\addcontentsline{toc}{section}{Conclusion}
+	\section*{Conclusion}
+	We attempted to calculate the amount of splits per unit length for three diffraction graters. For the third one we also tried to find its bevel angle. The results are:
+	\begin{itemize}
+		\item $N_{slit1} = 1190 \pm 7 mm^{-1}$
+		\item $N_{slit2} = 597 \pm 8 mm^{-1}$
+		\item $N_{slit3} = 316 \pm 3 mm^{-1}$.
+		\item $\gamma = 0.012 \pm 0.005$ rad
+	\end{itemize}
 	\addcontentsline{toc}{section}{References}
 	\begin{thebibliography}{9}
 		\bibitem{bel} 
