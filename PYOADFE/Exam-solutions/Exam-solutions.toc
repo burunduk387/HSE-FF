@@ -12,3 +12,4 @@
 \contentsline {subsection}{Билет 5. Понятие переобучения. Тестовая выборка.}{8}{equation.0.1}%
 \contentsline {subsection}{Билет 6. Идея метода k ближайших соседей (kNN).}{8}{section*.12}%
 \contentsline {subsection}{Билет 7. Гиперпараметры и валидационная выборка.}{9}{section*.13}%
+\contentsline {subsection}{Билет 8. Задача регрессии с учителем. Примеры. Популярные алгоритмы решения.}{9}{section*.14}%
