@@ -1,0 +1,7 @@
+\babel@toc {english}{}
+\contentsline {section}{Introduction}{2}{section*.1}%
+\contentsline {section}{Theoretical information}{2}{figure.1}%
+\contentsline {section}{Equipment and methods}{4}{equation.0.8}%
+\contentsline {section}{Experimental results}{4}{figure.2}%
+\contentsline {section}{Conclusion}{6}{figure.4}%
+\contentsline {section}{References}{6}{section*.6}%
